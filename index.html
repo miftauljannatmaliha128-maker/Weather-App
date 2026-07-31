@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name"
+            >
+
+            <button onclick="getWeather()">Search</button>
+
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+
+            <p><strong>City Name :</strong> <span id="city">--</span></p>
+
+            <p><strong>Temperature :</strong> <span id="temperature">--</span></p>
+
+            <p><strong>Humidity :</strong> <span id="humidity">--</span></p>
+
+            <p><strong>UV Index :</strong> <span id="uv">--</span></p>
+
+            <p><strong>Air Speed :</strong> <span id="wind">--</span></p>
+
+            <button class="reset-btn" onclick="resetApp()">
+                Search Again
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
